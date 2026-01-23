@@ -61,7 +61,9 @@ public struct Ch3_CustomVector2
 
     float Sqrt(float value)
     {
-        // Simple Newton iteration (enough for gameplay)
+        if (value <= 0f)
+            return 0f;
+
         float result = value;
         for (int i = 0; i < 5; i++)
             result = 0.5f * (result + value / result);
