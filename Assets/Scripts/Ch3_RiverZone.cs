@@ -3,7 +3,6 @@ using UnityEngine;
 public class Ch3_RiverZone : MonoBehaviour
 {
     [Header("River settings")]
-    [Tooltip("Direction of the river flow (will be normalized).")]
     public Ch3_CustomVector2 riverDirection = new Ch3_CustomVector2(1f, 0f);
 
     [Tooltip("Scalar strength of the river (units per second).")]

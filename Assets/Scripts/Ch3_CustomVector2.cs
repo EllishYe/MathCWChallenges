@@ -58,6 +58,10 @@ public struct Ch3_CustomVector2
     }
 
     // -------- Hard-coded math helpers --------
+    /*
+     * A safety check was added to prevent normalising a zero-length vector, 
+     * avoiding NaN propagation during movement calculations.
+     */
 
     float Sqrt(float value)
     {
